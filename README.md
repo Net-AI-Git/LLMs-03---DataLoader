@@ -4,6 +4,9 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.2.2-red?logo=pytorch&logoColor=white)](https://pytorch.org)
 [![TorchText](https://img.shields.io/badge/TorchText-0.17.2-orange)](https://pytorch.org/text)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter&logoColor=white)](https://jupyter.org)
+[![spaCy](https://img.shields.io/badge/spaCy-09A3D5?style=flat&logo=spacy&logoColor=white)](https://spacy.io)
+[![Transformers](https://img.shields.io/badge/🤗%20Transformers-4.42.1-yellow)](https://huggingface.co/transformers)
+[![NumPy](https://img.shields.io/badge/NumPy-1.26.0-013243?logo=numpy&logoColor=white)](https://numpy.org)
 
 A comprehensive comparison of text preprocessing approaches using PyTorch DataLoader for NLP applications. This project demonstrates two distinct methodologies for tokenization and vocabulary mapping in multilingual text processing pipelines.
 
@@ -17,11 +20,6 @@ A comprehensive comparison of text preprocessing approaches using PyTorch DataLo
 - 🎯 **PyTorch Integration**: Native torch tensors and padding sequences
 
 ## 🛠️ Tech Stack
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white)
-![spaCy](https://img.shields.io/badge/spaCy-09A3D5?style=flat&logo=spacy&logoColor=white)
 
 **Core Libraries:**
 - `torch==2.2.2` - Deep learning framework
