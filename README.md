@@ -5,12 +5,12 @@
 [![TorchText](https://img.shields.io/badge/TorchText-0.17.2-orange)](https://pytorch.org/text)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter&logoColor=white)](https://jupyter.org)
 
-A comparison of text preprocessing approaches using PyTorch DataLoader for NLP applications. This project demonstrates two distinct methodologies for tokenization and vocabulary mapping in multilingual text processing pipelines.
+A comprehensive comparison of text preprocessing approaches using PyTorch DataLoader for NLP applications. This project demonstrates two distinct methodologies for tokenization and vocabulary mapping in multilingual text processing pipelines.
 
 ## 🚀 Features
 
 - 📊 **Dual Preprocessing Approaches**: Item-level vs Batch-level text processing comparison
-- 🌍 **Multilingual Support**: English and French text processing with spaCy tokenizers  
+- 🌍 **Multilingual Support**: English (basic tokenizer) and French (spaCy) text processing  
 - ⚡ **Performance Benchmarking**: Built-in timing analysis for method comparison
 - 🔧 **Custom DataLoader Implementation**: Flexible collate functions for variable-length sequences
 - 📝 **Educational Focus**: Clear code documentation and methodology explanations
@@ -21,15 +21,14 @@ A comparison of text preprocessing approaches using PyTorch DataLoader for NLP a
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white)
-![spaCy](https://img.shields.io/badge/spaCy-09A3D5?style=flat&logo=spacy&logoColor=white)
 
 **Core Libraries:**
 - `torch==2.2.2` - Deep learning framework
 - `torchtext==0.17.2` - Text processing utilities
 - `transformers==4.42.1` - Hugging Face transformers
-- `spacy` - Advanced NLP processing
-- `pandas` - Data manipulation
+- `pandas` - Data manipulation  
 - `numpy==1.26.0` - Numerical computing
+- `spacy` - Optional multilingual NLP processing (used in examples)
 
 ## 📋 Table of Contents
 
@@ -101,10 +100,13 @@ dataloader = DataLoader(dataset, batch_size=2, collate_fn=batch_collate_fn)
 3. Compare timing results between methods
 4. Analyze the tokenized output for both approaches
 
-### Multilingual Processing
+### Multilingual Processing (Example)
 
 ```python
-# French text processing
+# Basic English tokenizer (main approach)
+tokenizer = get_tokenizer("basic_english")
+
+# spaCy French tokenizer (demonstration)
 tokenizer = get_tokenizer('spacy', language='fr_core_news_sm')
 corpus = ["Ceci est une phrase.", "C'est un autre exemple."]
 vocab = build_vocab_from_iterator(map(tokenizer, corpus))
