@@ -4,8 +4,7 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.2.2-red?logo=pytorch&logoColor=white)](https://pytorch.org)
 [![TorchText](https://img.shields.io/badge/TorchText-0.17.2-orange)](https://pytorch.org/text)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter&logoColor=white)](https://jupyter.org)
-[![spaCy](https://img.shields.io/badge/spaCy-09A3D5?style=flat&logo=spacy&logoColor=white)](https://spacy.io)
-[![Transformers](https://img.shields.io/badge/🤗%20Transformers-4.42.1-yellow)](https://huggingface.co/transformers)
+[![spaCy](https://img.shields.io/badge/spaCy-09A3D5?logo=spacy&logoColor=white)](https://spacy.io)
 [![NumPy](https://img.shields.io/badge/NumPy-1.26.0-013243?logo=numpy&logoColor=white)](https://numpy.org)
 
 A comprehensive comparison of text preprocessing approaches using PyTorch DataLoader for NLP applications. This project demonstrates two distinct methodologies for tokenization and vocabulary mapping in multilingual text processing pipelines.
@@ -24,9 +23,7 @@ A comprehensive comparison of text preprocessing approaches using PyTorch DataLo
 **Core Libraries:**
 - `torch==2.2.2` - Deep learning framework
 - `torchtext==0.17.2` - Text processing utilities
-- `transformers==4.42.1` - Hugging Face transformers
 - `spacy` - Advanced NLP processing
-- `pandas` - Data manipulation
 - `numpy==1.26.0` - Numerical computing
 
 ## 📋 Table of Contents
@@ -62,8 +59,7 @@ cd LLMs-03---DataLoader
 3. **Local Installation (alternative):**
 ```bash
 pip install torch==2.2.2 torchtext==0.17.2
-pip install transformers==4.42.1 sentencepiece
-pip install spacy pandas numpy==1.26.0 scikit-learn
+pip install spacy numpy==1.26.0 scikit-learn
 python -m spacy download en_core_web_sm
 python -m spacy download de_core_news_sm  
 python -m spacy download fr_core_news_sm
@@ -153,7 +149,7 @@ print("Elapsed time:", end - start, "seconds")
 
 ## 🚀 Future Work
 
-- [ ] Integration with modern transformer tokenizers (BERT, GPT)
+- [ ] Integration with transformer tokenizers (BERT, GPT)
 - [ ] Implementation of attention-based sequence processing
 - [ ] Support for larger vocabulary sizes and datasets
 - [ ] Memory optimization for large-scale text processing
@@ -181,7 +177,7 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 
 - PyTorch team for excellent documentation and examples
 - spaCy community for multilingual NLP support
-- Hugging Face for transformer model accessibility
+- TorchText developers for text processing utilities
 
 ---
 
